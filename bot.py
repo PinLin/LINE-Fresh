@@ -5,7 +5,8 @@ from flask import Flask, request, abort
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import (
-    MessageEvent, TextMessage, TextSendMessage,
+    FollowEvent,
+    MessageEvent, TextMessage,
 )
 
 from views.view import View
@@ -40,6 +41,18 @@ def callback():
         abort(400)
 
     return 'OK'
+
+
+@handler.add(FollowEvent)
+def handle_follow(event):
+    # 回應的訊息列表
+    responses = []
+
+    # 加入 MainView 的回應
+    MainView().main(responses, "")
+
+    # 發送回應
+    line_bot_api.reply_message(event.reply_token, responses)
 
 
 # 把 view 物件加入觸發機制中
