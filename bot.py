@@ -9,6 +9,7 @@ from linebot.models import (
 )
 
 from views.view import View
+from views.main_view import MainView
 from views.works_view import WorksView
 from views.china_view import ChinaView
 from views.shop_view import ShopView
@@ -43,6 +44,7 @@ def callback():
 
 # 把 view 物件加入觸發機制中
 views = [
+    MainView(),
     WorksView(), ChinaView(), ShopView(), KcojView(), BustwView(), UrlView()
 ]
 
