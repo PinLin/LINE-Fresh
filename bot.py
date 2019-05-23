@@ -14,6 +14,7 @@ from views.china_view import ChinaView
 from views.shop_view import ShopView
 from views.kcoj_view import KcojView
 from views.bustw_view import BustwView
+from views.url_view import UrlView
 
 app = Flask(__name__)
 
@@ -42,7 +43,7 @@ def callback():
 
 # 把 view 物件加入觸發機制中
 views = [
-    WorksView(), ChinaView(), ShopView(), KcojView(), BustwView()
+    WorksView(), ChinaView(), ShopView(), KcojView(), BustwView(), UrlView()
 ]
 
 
