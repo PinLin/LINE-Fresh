@@ -11,6 +11,7 @@ from linebot.models import (
 from views.view import View
 from views.works_view import WorksView
 from views.china_view import ChinaView
+from views.shop_view import ShopView
 
 app = Flask(__name__)
 
@@ -38,7 +39,7 @@ def callback():
 
 
 # 把 view 物件加入觸發機制中
-views = [View(), WorksView(), ChinaView()]
+views = [View(), WorksView(), ChinaView(), ShopView()]
 
 
 @handler.add(MessageEvent, message=TextMessage)
