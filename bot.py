@@ -8,6 +8,8 @@ from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,
 )
 
+from views.view import View
+
 app = Flask(__name__)
 
 line_bot_api = LineBotApi(os.getenv('LINE_CHANNEL_ACCESS_TOKEN'))
@@ -33,16 +35,21 @@ def callback():
     return 'OK'
 
 
+# 把 view 物件加入觸發機制中
+views = [View()]
+
+
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    messages = []
+    # 回應的訊息列表
+    responses = []
 
-    messages += [TextSendMessage(text=event.message.text)]
-    messages += [TextSendMessage(text=event.message.text)]
+    # 嘗試觸發各個 view
+    for view in views:
+        view.trigger(responses, event.message.text)
 
-    line_bot_api.reply_message(
-        event.reply_token,
-        messages)
+    # 發送回應
+    line_bot_api.reply_message(event.reply_token, responses)
 
 
 if __name__ == '__main__':
