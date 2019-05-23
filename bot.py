@@ -41,7 +41,9 @@ def callback():
 
 
 # 把 view 物件加入觸發機制中
-views = [View(), WorksView(), ChinaView(), ShopView(), KcojView(), BustwView()]
+views = [
+    WorksView(), ChinaView(), ShopView(), KcojView(), BustwView()
+]
 
 
 @handler.add(MessageEvent, message=TextMessage)
