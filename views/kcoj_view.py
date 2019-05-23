@@ -8,7 +8,7 @@ from linebot.models import (
 class KcojView(View):
     @property
     def _keywords(self):
-        return ['kcoj']
+        return ['kcoj', '交作業']
 
     def main(self, responses: list, text: str) -> None:
         """
