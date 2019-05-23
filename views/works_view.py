@@ -28,10 +28,10 @@ class WorksView(View):
                            text="China Cipher Messenger - 點對點加密通訊平台",
                            thumbnail_image_url="https://i.imgur.com/4H039Li.png",
                            actions=[
-                               MessageAction(label="詳細介紹", text='介紹一下瓷器信使吧'),
+                               MessageAction(label="介紹一下", text='介紹一下瓷器信使吧'),
                                URIAction(label="看原始碼",
                                          uri='https://github.com/ChinaCipher/messenger-server'),
-                               URIAction(label="體驗一下",
+                               URIAction(label="想玩玩看",
                                          uri='https://ccm.ntut.com.tw/'),
                            ]),
             CarouselColumn(title="北科大學店",
@@ -39,10 +39,10 @@ class WorksView(View):
                            thumbnail_image_url="https://i.imgur.com/FGDlI7s.png",
                            actions=[
                                MessageAction(
-                                   label="詳細介紹", text='介紹一下北科大學店吧'),
+                                   label="介紹一下", text='介紹一下北科大學店吧'),
                                URIAction(label="看原始碼",
                                          uri='https://github.com/ntutshop/ntut-shop'),
-                               URIAction(label="體驗一下",
+                               URIAction(label="想玩玩看",
                                          uri='https://ntut.shop/'),
                            ]),
             CarouselColumn(title="KCOJ",
@@ -50,10 +50,10 @@ class WorksView(View):
                            thumbnail_image_url="https://i.imgur.com/QTuiLDX.png",
                            actions=[
                                MessageAction(
-                                   label="詳細介紹", text='介紹一下 KCOJ 吧'),
+                                   label="介紹一下", text='介紹一下 KCOJ 吧'),
                                URIAction(label="看原始碼",
                                          uri='https://github.com/kcoj/KCOJ'),
-                               URIAction(label="體驗一下",
+                               URIAction(label="想玩玩看",
                                          uri='https://kcoj.ntut.com.tw/'),
                            ]),
             CarouselColumn(title="Bustw",
@@ -61,7 +61,7 @@ class WorksView(View):
                            thumbnail_image_url="https://i.imgur.com/rC6GbP2.png",
                            actions=[
                                MessageAction(
-                                   label="詳細介紹", text='介紹一下 Bustw 吧'),
+                                   label="介紹一下", text='介紹一下 Bustw 吧'),
                                URIAction(label="看原始碼（Client）",
                                          uri='https://github.com/PinLin/bustw_cli'),
                                URIAction(label="看原始碼（Server）",
@@ -72,10 +72,10 @@ class WorksView(View):
                            thumbnail_image_url="https://i.imgur.com/WqNiVCc.png",
                            actions=[
                                MessageAction(
-                                   label="詳細介紹", text='介紹一下 NTUT_Url 吧'),
+                                   label="介紹一下", text='介紹一下 NTUT_Url 吧'),
                                URIAction(label="看原始碼",
                                          uri='https://github.com/PinLin/ntut_url'),
-                               URIAction(label="體驗一下",
+                               URIAction(label="想玩玩看",
                                          uri='https://ntut.io/us'),
                            ])
         ]
