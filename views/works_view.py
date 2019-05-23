@@ -77,7 +77,7 @@ class WorksView(View):
                                          uri='https://github.com/PinLin/ntut_url'),
                                URIAction(label="想玩玩看",
                                          uri='https://ntut.io/us'),
-                           ])
+                           ]),
         ]
 
         return CarouselTemplate(columns=columns)
