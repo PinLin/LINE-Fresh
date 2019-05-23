@@ -8,7 +8,7 @@ from linebot.models import (
 class UrlView(View):
     @property
     def _keywords(self):
-        return ['ntut_url', 'url', '縮網址']
+        return ['ntut_url', 'url', '縮網址', 'ntut.io/us']
 
     def main(self, responses: list, text: str) -> None:
         """

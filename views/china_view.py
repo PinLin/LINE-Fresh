@@ -8,7 +8,7 @@ from linebot.models import (
 class ChinaView(View):
     @property
     def _keywords(self):
-        return ['瓷器信使', 'china', 'cipher', 'messenger']
+        return ['瓷器信使', 'china', 'cipher', 'messenger', 'ccm.ntut.com.tw']
 
     def main(self, responses: list, text: str) -> None:
         """

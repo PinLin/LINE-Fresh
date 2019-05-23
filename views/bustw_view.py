@@ -8,7 +8,7 @@ from linebot.models import (
 class BustwView(View):
     @property
     def _keywords(self):
-        return ['bustw', '公車']
+        return ['bustw', '公車', 'bus.ntut.com.tw']
 
     def main(self, responses: list, text: str) -> None:
         """

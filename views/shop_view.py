@@ -8,7 +8,7 @@ from linebot.models import (
 class ShopView(View):
     @property
     def _keywords(self):
-        return ['北科大學店', 'ntut-shop', 'ntut shop', 'shop']
+        return ['北科大學店', 'ntut-shop', 'ntut shop', 'shop', 'ntut.shop']
 
     def main(self, responses: list, text: str) -> None:
         """
