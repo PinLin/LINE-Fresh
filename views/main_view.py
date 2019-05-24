@@ -14,7 +14,7 @@ class MainView(View):
 
     def main(self, responses: list, text: str) -> None:
         """
-        橫向可滑動的作品集預覽
+        指向四大功能的主選單
         """
         responses += [
             TemplateSendMessage("你好！我是 Pin Lin，你想要問些什麼呢？",
