@@ -13,6 +13,7 @@ from views.view import View
 from views.main_view import MainView
 from views.intro_view import IntroView
 from views.community_view import CommunityView
+from views.competition_view import CompetitionView
 from views.works_view import WorksView
 from views.china_view import ChinaView
 from views.shop_view import ShopView
@@ -60,7 +61,7 @@ def handle_follow(event):
 # 把 view 物件加入觸發機制中
 views = [
     MainView(),
-    IntroView(), CommunityView(),
+    IntroView(), CommunityView(), CompetitionView(),
     WorksView(), ChinaView(), ShopView(), KcojView(), BustwView(), UrlView()
 ]
 

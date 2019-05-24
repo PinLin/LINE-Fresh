@@ -36,5 +36,5 @@ class IntroView(View):
                                    MessageAction(
                                        label="社群參與", text='你都參與什麼社群呢'),
                                    MessageAction(
-                                       label="榮譽經歷", text='有比過什麼賽得獎嗎'),
+                                       label="比賽經歷", text='有去比賽過嗎'),
                                ])
