@@ -10,7 +10,7 @@ from linebot.models import (
 class MainView(View):
     @property
     def _keywords(self) -> list:
-        return ['嗨', '你好', 'start', 'help']
+        return ['主選單', '嗨', '你好', 'start', 'help']
 
     def main(self, responses: list, text: str) -> None:
         """
