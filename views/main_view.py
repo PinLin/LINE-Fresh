@@ -3,7 +3,7 @@ from views.view import View
 from linebot.models import (
     ButtonsTemplate,
     MessageAction,
-    TemplateSendMessage,
+    TemplateSendMessage, TextSendMessage,
 )
 
 
@@ -19,6 +19,7 @@ class MainView(View):
         responses += [
             TemplateSendMessage("你好！我是 Pin Lin，你想要問些什麼呢？",
                                 template=self.__main_template()),
+            TextSendMessage("或是來看看我的完整履歷！\nhttps://hackmd.io/s/Sy6vLvX9N"),
         ]
 
     def __main_template(self) -> ButtonsTemplate:
