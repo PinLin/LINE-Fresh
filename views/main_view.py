@@ -28,7 +28,7 @@ class MainView(View):
                                thumbnail_image_url="https://i.imgur.com/zYwjyI1.png",
                                actions=[
                                    MessageAction(
-                                       label="自我介紹", text='先來個自我介紹吧'),
+                                       label="自我介紹", text='來一段自我介紹吧'),
                                    MessageAction(
                                        label="實習動機", text='為什麼想要來實習呢'),
                                    MessageAction(
