@@ -1,7 +1,7 @@
 from views.view import View
 
 from linebot.models import (
-    TextSendMessage, StickerSendMessage
+    TextSendMessage, StickerSendMessage,
 )
 
 
