@@ -34,7 +34,7 @@ class TechnologyView(View):
             ImageCarouselColumn(image_url="https://i.imgur.com/soNxoDZ.png",
                                 action=MessageAction(label="Bash：熟練", text='你的 Bash 如何')),
             ImageCarouselColumn(image_url="https://i.imgur.com/L1aiapI.png",
-                                action=MessageAction(label="C：中等", text='你的 C 如何')),
+                                action=MessageAction(label="C：中等", text='你的 C 語言如何')),
             ImageCarouselColumn(image_url="https://i.imgur.com/g2hOVzF.png",
                                 action=MessageAction(label="C++：中等", text='你的 C++ 如何')),
             ImageCarouselColumn(image_url="https://i.imgur.com/cwh0khY.png",

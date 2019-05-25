@@ -8,7 +8,7 @@ from linebot.models import (
 class CView(View):
     @property
     def _keywords(self):
-        return ['c', 'c語言', 'c 語言']
+        return ['c語言', 'c 語言']
 
     def main(self, responses: list, text: str) -> None:
         """
