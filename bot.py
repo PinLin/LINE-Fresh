@@ -23,6 +23,7 @@ from views.bash_view import BashView
 from views.c_view import CView
 from views.csharp_view import CsharpView
 from views.java_view import JavaView
+from views.docker_view import DockerView
 from views.git_view import GitView
 from views.works_view import WorksView
 from views.china_view import ChinaView
@@ -76,7 +77,7 @@ views = [
     TechnologyView(),
     PythonView(), NodejsView(), GolangView(), BashView(),
     CView(), CsharpView(), JavaView(),
-    GitView(),
+    DockerView(), GitView(),
     WorksView(), ChinaView(), ShopView(), KcojView(), BustwView(), UrlView()
 ]
 
