@@ -21,6 +21,7 @@ from views.nodejs_view import NodejsView
 from views.golang_view import GolangView
 from views.bash_view import BashView
 from views.c_view import CView
+from views.csharp_view import CsharpView
 from views.java_view import JavaView
 from views.git_view import GitView
 from views.works_view import WorksView
@@ -74,7 +75,7 @@ views = [
     MotivationView(),
     TechnologyView(),
     PythonView(), NodejsView(), GolangView(), BashView(),
-    CView(), JavaView(),
+    CView(), CsharpView(), JavaView(),
     GitView(),
     WorksView(), ChinaView(), ShopView(), KcojView(), BustwView(), UrlView()
 ]
