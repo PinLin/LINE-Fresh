@@ -19,8 +19,7 @@ class WorksView(View):
         """
         responses += [
             TemplateSendMessage("這是我的作品集", template=self.__works_template()),
-            TextSendMessage("更完整的作品集\nhttps://hackmd.io/s/SkXSWmUjN"),
-            TextSendMessage("或是我的 GitHub 頁面\nhttps://github.com/PinLin"),
+            TextSendMessage("或是來看更完整的作品集\nhttps://hackmd.io/s/SkXSWmUjN"),
         ]
 
     def __works_template(self) -> CarouselTemplate:
