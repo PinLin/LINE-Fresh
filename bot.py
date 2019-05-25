@@ -20,6 +20,7 @@ from views.python_view import PythonView
 from views.nodejs_view import NodejsView
 from views.golang_view import GolangView
 from views.bash_view import BashView
+from views.c_view import CView
 from views.works_view import WorksView
 from views.china_view import ChinaView
 from views.shop_view import ShopView
@@ -69,7 +70,7 @@ views = [
     MainView(),
     IntroView(), CommunityView(), CompetitionView(),
     MotivationView(),
-    TechnologyView(), PythonView(), NodejsView(), GolangView(), BashView(),
+    TechnologyView(), PythonView(), NodejsView(), GolangView(), BashView(), CView(),
     WorksView(), ChinaView(), ShopView(), KcojView(), BustwView(), UrlView()
 ]
 
