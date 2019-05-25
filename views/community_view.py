@@ -25,7 +25,7 @@ class CommunityView(View):
             TextSendMessage(
                 "在和夥伴們共事的期間，感覺整個籌備團隊就像是一家組織扁平的小公司：部門間分工明確、有事發 mail，不太用通訊軟體催進度（？）。"),
             TextSendMessage(
-                "這些都是我人生中不可多得的寶貴經驗，像是提早體驗了和職場上同事們合作的情境。"),
+                "這些讓我像是提早體驗了在職場上與同事們合作的情境，都是我人生中不可多得的寶貴經驗。"),
             TemplateSendMessage(
                 "我有參與籌備的社群活動", template=self.__activity_template()),
         ]
