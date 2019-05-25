@@ -16,6 +16,7 @@ from views.community_view import CommunityView
 from views.competition_view import CompetitionView
 from views.motivation_view import MotivationView
 from views.technology_view import TechnologyView
+from views.python_view import PythonView
 from views.works_view import WorksView
 from views.china_view import ChinaView
 from views.shop_view import ShopView
@@ -65,7 +66,7 @@ views = [
     MainView(),
     IntroView(), CommunityView(), CompetitionView(),
     MotivationView(),
-    TechnologyView(),
+    TechnologyView(), PythonView(),
     WorksView(), ChinaView(), ShopView(), KcojView(), BustwView(), UrlView()
 ]
 
