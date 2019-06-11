@@ -15,9 +15,11 @@ Chatbot ID: [@175novon](https://line.me/R/ti/p/@175novon)
 
 ## Deploy
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PinLin/LINE-Fresh)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PinLin/LINE-Fresh) 
 
-or deploy manually.
+> Remember to add   `LINE_CHANNEL_ACCESS_TOKEN` and `LINE_CHANNEL_SECRET` to **Config Vars** in settings.
+
+Or you can deploy manually by following these steps.
 
 1. Install dependencies.
 
