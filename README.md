@@ -15,6 +15,10 @@ Chatbot ID: [@175novon](https://line.me/R/ti/p/@175novon)
 
 ## Deploy
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PinLin/LINE-Fresh)
+
+or deploy manually.
+
 1. Install dependencies.
 
    ```bash

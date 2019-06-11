@@ -1,0 +1,13 @@
+{
+    "name": "About Pin Lin LINE Chatbot",
+    "description": "A chatbot for LINE Tech Fresh 2019 pre-test",
+    "repository": "https://github.com/PinLin/LINE-Fresh",
+    "logo": "https://imgur.com/32RhJDJ.png",
+    "keywords": [
+        "python",
+        "flask",
+        "line",
+        "chatbot",
+        "line-fresh"
+    ]
+}
