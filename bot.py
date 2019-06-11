@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, request, abort
+from flask import Flask, request, abort, redirect
 
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
@@ -41,6 +41,12 @@ app = Flask(__name__)
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
+
+
+@app.route('/')
+def root():
+    # 重導向至專案頁面
+    return redirect("https://github.com/PinLin/LINE-Fresh")
 
 
 @app.route('/callback', methods=['POST'])
