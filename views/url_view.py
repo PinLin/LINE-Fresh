@@ -10,11 +10,11 @@ class UrlView(View):
     def _keywords(self):
         return ['ntut_url', 'url', '縮網址', 'ntut.io/us']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         用簡單文字介紹 NTUT_Url
         """
-        responses += [
+        return [
             TextSendMessage(
                 "這個專案是我興趣使然的，會想寫是因為一直在使用的 goo.gl 縮網址服務不再提供了..."),
             TextSendMessage(

@@ -13,11 +13,11 @@ class CommunityView(View):
     def _keywords(self) -> list:
         return ['社群']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         社群參與的心得和曾經籌備過的社群活動
         """
-        responses += [
+        return [
             TextSendMessage(
                 "高中時期開始接觸了開源資訊社群，認識了一群同樣對資訊科技有興趣的夥伴們。"),
             TextSendMessage(

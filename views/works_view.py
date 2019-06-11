@@ -13,11 +13,11 @@ class WorksView(View):
     def _keywords(self) -> list:
         return ['作品', '專案']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         橫向可滑動的作品集預覽
         """
-        responses += [
+        return [
             TemplateSendMessage("這是我的作品集", template=self.__works_template()),
             TextSendMessage("或是來看更完整的作品集\nhttps://hackmd.io/s/SkXSWmUjN"),
         ]

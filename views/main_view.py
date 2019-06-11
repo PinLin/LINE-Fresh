@@ -12,11 +12,11 @@ class MainView(View):
     def _keywords(self) -> list:
         return ['主選單', '嗨', '你好', 'start', 'help']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         指向四大功能的主選單
         """
-        responses += [
+        return [
             TemplateSendMessage("你好！我是 Pin Lin，你想要問些什麼呢？",
                                 template=self.__main_template()),
             TextSendMessage("或是來看看我的完整履歷！\nhttps://hackmd.io/s/Sy6vLvX9N"),

@@ -10,11 +10,11 @@ class GitView(View):
     def _keywords(self):
         return ['git']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         說明自己 Git 的程度
         """
-        responses += [
+        return [
             TextSendMessage(
                 "在大學入學前的暑假我參加了有名的 SITCON 夏令營，在裡頭學到了使用 Git 對專案做版本控制的基本技巧。"),
             TextSendMessage(

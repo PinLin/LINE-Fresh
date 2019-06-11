@@ -10,11 +10,11 @@ class DockerView(View):
     def _keywords(self):
         return ['docker']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         說明自己 Docker 的程度
         """
-        responses += [
+        return [
             TextSendMessage(
                 "大概是大二的時候開始使用 Docker 來部署自己撰寫的服務，真的很好用> <"),
             TextSendMessage(

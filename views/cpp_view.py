@@ -10,11 +10,11 @@ class CppView(View):
     def _keywords(self):
         return ['cpp', 'c++', 'cplusplus', 'c plus plus']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         說明自己 C++ 的程度
         """
-        responses += [
+        return [
             TextSendMessage(
                 "是個很麻煩的語言呢，所以也不敢說對它很熟悉"),
             TextSendMessage(

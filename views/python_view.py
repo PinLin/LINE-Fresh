@@ -10,11 +10,11 @@ class PythonView(View):
     def _keywords(self):
         return ['Python']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         說明自己 Python 的程度
         """
-        responses += [
+        return [
             TextSendMessage(
                 "Python 是我目前最熟練的程式語言，對於基本的語法我都還算是有一定程度的了解。"),
             TextSendMessage(

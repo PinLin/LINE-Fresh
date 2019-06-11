@@ -74,7 +74,7 @@ def handle_follow(event):
     responses = []
 
     # 加入 MainView 的回應
-    MainView().main(responses, "")
+    responses += MainView().main("")
 
     # 發送回應
     line_bot_api.reply_message(event.reply_token, responses)
@@ -100,7 +100,7 @@ def handle_message(event):
 
     # 嘗試觸發各個 view
     for view in views:
-        view.trigger(responses, event.message.text)
+        responses += view.trigger(responses, event.message.text)
 
     # 發送回應
     line_bot_api.reply_message(event.reply_token, responses)

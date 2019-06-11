@@ -10,11 +10,11 @@ class BustwView(View):
     def _keywords(self):
         return ['bustw', '公車', 'bus.ntut.com.tw']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         用簡單文字介紹 Bustw
         """
-        responses += [
+        return [
             TextSendMessage(
                 "這個專案是我興趣使然的，因為之前拿的手機太爛了，使用上常伴隨著莫名卡頓，日常生活中便有比較多的時間在使用電腦。"),
             TextSendMessage(

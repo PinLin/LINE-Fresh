@@ -9,7 +9,7 @@ class View:
         """
         return ['測試', 'test']
 
-    def trigger(self, responses: list, text: str) -> None:
+    def trigger(self, responses: list, text: str) -> list:
         """
         觸發 view 的機制
         """
@@ -17,13 +17,14 @@ class View:
         for keyword in self._keywords:
             if keyword.lower() in text.lower():
                 # 編輯回應的訊息列表
-                self.main(responses, text)
-                return
+                return self.main(text)
+        
+        return []
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         要回傳的所有訊息
         """
-        responses += [
+        return [
             TextSendMessage(text="早安我的朋友"),
         ]

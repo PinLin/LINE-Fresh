@@ -10,11 +10,11 @@ class GolangView(View):
     def _keywords(self):
         return ['golang', 'go']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         說明自己 Go 的程度
         """
-        responses += [
+        return [
             TextSendMessage(
                 "雖然語法上有部分和較常見的幾個語言很不一樣，但是好懂、好寫、效能又好的平行處理機制真的是很令人心動呢！"),
             TextSendMessage(

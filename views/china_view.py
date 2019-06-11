@@ -10,11 +10,11 @@ class ChinaView(View):
     def _keywords(self):
         return ['瓷器信使', 'china', 'cipher', 'messenger', 'ccm.ntut.com.tw']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         用簡單文字介紹瓷器信使
         """
-        responses += [
+        return [
             TextSendMessage(
                 "這個專案是資訊安全課程的期末專題。"),
             TextSendMessage(

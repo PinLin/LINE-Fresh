@@ -10,11 +10,11 @@ class BashView(View):
     def _keywords(self):
         return ['bash', 'shell']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         說明自己 Bash 的程度
         """
-        responses += [
+        return [
             TextSendMessage(
                 "為了培養自己管理伺服器的基本能力，我便花了畢生積蓄買了一台搭載 Unix 架構作業系統的 MacBook Pro 作為自己的工作機。"),
             TextSendMessage(

@@ -10,11 +10,11 @@ class CompetitionView(View):
     def _keywords(self) -> list:
         return ['比賽', '競賽', '榮譽']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         秀出自我介紹和知道更多的選單
         """
-        responses += [
+        return [
             TextSendMessage(
                 "因為以前有修過一點資料分析的課，便和我的女朋友組隊去挑戰了「2018 金象盃全國大數據實務能力競賽」"),
             TextSendMessage(

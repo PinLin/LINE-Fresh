@@ -10,11 +10,11 @@ class MotivationView(View):
     def _keywords(self):
         return ['實習', '動機']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         用簡單文字介紹北科大學店
         """
-        responses += [
+        return [
             TextSendMessage(
                 "有次跟一位在 LINE 實習的學長聊天時，學長便和我們分享了他的實習經驗。提到了 LINE 的工作環境很棒、團隊氣氛融洽、共事的夥伴都很強大、巨大熊大的毛很順很好摸（？），在那實習就像置身天堂一般。被學長的強力推薦之後的我真的超級心動，而且如果能夠進到 LINE 公司實習一定很酷！"),
             TextSendMessage(

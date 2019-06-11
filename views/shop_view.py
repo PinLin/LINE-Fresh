@@ -10,11 +10,11 @@ class ShopView(View):
     def _keywords(self):
         return ['北科大學店', '學店', 'ntut-shop', 'ntut shop', 'shop', 'ntut.shop']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         用簡單文字介紹北科大學店
         """
-        responses += [
+        return [
             TextSendMessage(
                 "這個專案是資料庫系統課程的期末專題。"),
             TextSendMessage(

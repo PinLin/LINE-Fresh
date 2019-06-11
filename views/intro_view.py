@@ -12,11 +12,11 @@ class IntroView(View):
     def _keywords(self) -> list:
         return ['自我介紹']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         秀出自我介紹和知道更多的選單
         """
-        responses += [
+        return [
             TextSendMessage(
                 "我叫做林凭，目前就讀國立臺北科技大學資訊工程系三年級。"),
             TextSendMessage(

@@ -10,11 +10,11 @@ class KcojView(View):
     def _keywords(self):
         return ['kcoj', '交作業', 'kcoj.ntut.com.tw']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         用簡單文字介紹 KCOJ
         """
-        responses += [
+        return [
             TextSendMessage(
                 "這個專案是網頁程式設計課程的期末專題。"),
             TextSendMessage(

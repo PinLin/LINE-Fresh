@@ -13,11 +13,11 @@ class TechnologyView(View):
     def _keywords(self):
         return ['技術']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         列出我會的技術的圖片和程度
         """
-        responses += [
+        return [
             TemplateSendMessage(
                 "這些是我會的技術", template=self.__technology_template()),
             TextSendMessage("點進圖片可以聽我說明哦！"),

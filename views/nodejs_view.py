@@ -10,11 +10,11 @@ class NodejsView(View):
     def _keywords(self):
         return ['node.js', 'nodejs', 'node']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         說明自己 Node.js 的程度
         """
-        responses += [
+        return [
             TextSendMessage(
                 "現在用 JavaScript 就可以前後端通吃啦！"),
             TextSendMessage(

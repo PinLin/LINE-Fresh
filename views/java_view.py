@@ -10,11 +10,11 @@ class JavaView(View):
     def _keywords(self):
         return ['java']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         說明自己 Java 的程度
         """
-        responses += [
+        return [
             TextSendMessage(
                 "第一次接觸到 Java 是在修習 Android 應用開發課程時。"),
             TextSendMessage(

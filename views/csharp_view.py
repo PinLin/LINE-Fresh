@@ -10,11 +10,11 @@ class CsharpView(View):
     def _keywords(self):
         return ['c#', 'csharp', 'c sharp']
 
-    def main(self, responses: list, text: str) -> None:
+    def main(self, text: str) -> list:
         """
         說明自己 C# 的程度
         """
-        responses += [
+        return [
             TextSendMessage(
                 "目前對 C# 的印象就是生態系都圍繞在 Windows 上，所以程度大概只有到懂一些基本語法。"),
             TextSendMessage(
