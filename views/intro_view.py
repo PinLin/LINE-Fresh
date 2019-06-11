@@ -10,7 +10,7 @@ from linebot.models import (
 class IntroView(View):
     @property
     def _keywords(self) -> list:
-        return ['自我介紹']
+        return ['自我介紹', '是誰']
 
     def main(self, text: str) -> list:
         """
