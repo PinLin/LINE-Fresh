@@ -19,7 +19,7 @@ class MainView(View):
         return [
             TemplateSendMessage("你好！我是 Pin Lin，你想要問些什麼呢？",
                                 template=self.__main_template()),
-            TextSendMessage("或是來看看我的完整履歷！\nhttps://hackmd.io/s/Sy6vLvX9N"),
+            TextSendMessage("或是來看看我的完整履歷！\https://hackmd.io/@PinLin/resume"),
         ]
 
     def __main_template(self) -> ButtonsTemplate:
