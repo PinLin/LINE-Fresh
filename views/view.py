@@ -9,23 +9,16 @@ class View:
         """
         return ['測試', 'test']
 
-    def _judge(self, keywords: list, text: str) -> bool:
-        """
-        設定觸發的條件
-        """
-        # 如果訊息文字中存在任一關鍵字
-        for keyword in self._keywords:
-            if keyword.lower() in text.lower():
-                return True
-
-        return False
-
     def trigger(self, responses: list, text: str) -> None:
         """
         觸發 view 的機制
         """
-        if self._judge(self._keywords, text):
-            self.main(responses, text)
+        # 如果訊息文字中存在任一關鍵字
+        for keyword in self._keywords:
+            if keyword.lower() in text.lower():
+                # 編輯回應的訊息列表
+                self.main(responses, text)
+                return
 
     def main(self, responses: list, text: str) -> None:
         """
