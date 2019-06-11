@@ -32,6 +32,7 @@ from views.shop_view import ShopView
 from views.kcoj_view import KcojView
 from views.bustw_view import BustwView
 from views.url_view import UrlView
+from views.others_view import OthersView
 
 PORT = int(os.getenv('PORT', 5000))
 LINE_CHANNEL_ACCESS_TOKEN = os.getenv('LINE_CHANNEL_ACCESS_TOKEN')
@@ -89,7 +90,8 @@ views = [
     PythonView(), NodejsView(), GolangView(), BashView(),
     CView(), CppView(), CsharpView(), JavaView(),
     DockerView(), GitView(),
-    WorksView(), ChinaView(), ShopView(), KcojView(), BustwView(), UrlView()
+    WorksView(), ChinaView(), ShopView(), KcojView(), BustwView(), UrlView(),
+    OthersView(),
 ]
 
 
