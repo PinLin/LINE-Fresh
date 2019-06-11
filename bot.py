@@ -33,10 +33,14 @@ from views.kcoj_view import KcojView
 from views.bustw_view import BustwView
 from views.url_view import UrlView
 
+PORT = int(os.getenv('PORT', 5000))
+LINE_CHANNEL_ACCESS_TOKEN = os.getenv('LINE_CHANNEL_ACCESS_TOKEN')
+LINE_CHANNEL_SECRET = os.getenv('LINE_CHANNEL_SECRET')
+
 app = Flask(__name__)
 
-line_bot_api = LineBotApi(os.getenv('LINE_CHANNEL_ACCESS_TOKEN'))
-handler = WebhookHandler(os.getenv('LINE_CHANNEL_SECRET'))
+line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
+handler = WebhookHandler(LINE_CHANNEL_SECRET)
 
 
 @app.route('/callback', methods=['POST'])
@@ -97,4 +101,4 @@ def handle_message(event):
 
 
 if __name__ == '__main__':
-    app.run(port=int(os.environ.get('PORT', 5000)))
+    app.run(port=PORT)
